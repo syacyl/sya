@@ -1,0 +1,280 @@
+<html>
+<html>
+<head>
+  <title>About</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header Styles */
+    .header {
+      background-color: #CBD2A4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 1px solid grey;
+    }
+
+    .header .title-container {
+      font-size: 15px;
+      font-weight: bold;
+      color: #597445;
+    }
+
+    .header .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header .menu a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #666;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .header .menu a:hover {
+      color: #000;
+    }
+
+    /* Content Section with Background */
+    .content-container {
+      min-height: 90vh;
+      background-image: url('bg vii image.jpeg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content-container h1 {
+      font-size: 30px;
+      margin: 0 0 -5px 0;
+      color: #006A67;
+      font-family: terminus;
+    }
+
+    .content-container h2 {
+      font-size: 20px;
+      margin-top: 30px;
+      color: black;
+      font-family: Times New Roman, serif;
+    }
+
+    /* Table Styles */
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: transparent; 
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+      color: black; 
+    }
+
+    th {
+      background-color: #B3C8CF;
+      color: #444;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.5); 
+    }
+
+    tr:hover {
+      background-color: rgba(200, 200, 200, 0.5);
+    }
+
+    .menu a.current-page {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .fade-in {
+      opacity: 0; /* Initially invisible */
+      transform: translateY(20px); 
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+    }
+
+    /* Class applied when rows are visible */
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #CBD2A4; /
+      color: #444;
+      text-align: center;
+      padding: 20px 0px;
+      border-top: 1px solid #ccc; 
+      position: relative; 
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-container {
+      max-width: 1200px; 
+      margin: auto;
+    }
+
+     .footer p {
+      margin: 0; 
+      font-size: 14px;
+    }
+
+    .footer-links {
+      display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px; 
+margin-top: 15px;
+}
+
+
+    .footer-links a {
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #000; 
+    }
+
+   .footer-links img {
+  width: 30px; 
+  height: 30px; 
+  object-fit: contain;
+} 
+  </style>
+  </head>
+
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="title-container">
+      <h1>About Me</h1>
+    </div>
+
+    <div class="center-title"></div>
+    <div class="menu">
+      <a href="resumewebsite.html">Home</a>
+      <a href="aboutme.html" class="current-page">About</a>
+      <a href="personalpicks.html">Personal Picks</a>
+      <a href="gallery2.html">Gallery</a>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content-container">
+    <marquee><h1>Biodata</h1></marquee>
+
+    <h2>Personal Details</h2>
+    <table>
+      <tbody>
+        <tr><th>Name:</th><td>Amisha Hazreen Amirhyde</td></tr>
+        <tr><th>Father's Name:</th><td>Amirhyde Yahaya</td></tr>
+        <tr><th>Mother's Name:</th><td>Haizalila Md Ishak</td></tr>
+        <tr><th>Age:</th><td>20</td></tr>
+        <tr><th>D.O.B:</th><td>26th April 2004</td></tr>
+        <tr><th>Gender:</th><td>Female</td></tr>
+        <tr><th>Nationality:</th><td>Malaysia</td></tr>
+        <tr><th>Language Known:</th><td>Malay</td></tr>
+        <tr><th>Hobby:</th><td>Editing video</td></tr>
+        <tr>
+          <th>Favourite Food:</th>
+          <td>
+            <ol type="i">
+              <li>Nasi Ayam</li>
+              <li>Spaghetti</li>
+              <li>Maggi goreng</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th>Favourite Drink:</th>
+          <td>
+            <ul type="square">
+              <li>Teh O Ais</li>
+              <li>Orange Juice</li>
+              <li>Green Tea</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Education</h2>
+    <table>
+      <tbody>
+        <tr><th>Primary School:</th><td>SMK Dato' Penggawa Timur (2017-2021)</td></tr>
+        <tr><th>University:</th><td>Universiti Teknologi Mara (2022-now)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Work Experience</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th>Internship:</th>
+          <td>Lembaga Pertubuhan Peladang (LPP Negeri Johor)<br>21st July - 12th September</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer Section -->
+   <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2024 Amisha Hazreen Amirhyde. All Rights Reserved.</p>
+       <br>
+      <p> Connect with me: </p>
+        
+      <div class="footer-links">
+        <a href="https://facebook.com" target="_blank"> 
+             <img src="fb logo.PNG" alt="facebook"> </a>
+        <a href="https://www.instagram.com/syaesiurc/" target="_blank">
+               <img src="insta logo.PNG" alt="instagram"> </a>
+        <a href="https://www.youtube.com/@amishahazreen7060" target="_blank">
+                 <img src="yt logo.PNG" alt="youtube"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const rows = document.querySelectorAll('table tr');
+    rows.forEach((row) => {
+      row.classList.add('fade-in');
+      observer.observe(row);
+    });
+  </script>
+</body>
+</html>

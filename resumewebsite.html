@@ -1,0 +1,320 @@
+<html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Wrapper for Full Page Layout */
+    .wrapper {
+      min-height: 100vh; /* Ensures full viewport height */
+      display: flex;
+      flex-direction: column; /* Stack header, content, and footer vertically */
+    }
+
+    /* Header Section */
+    .header {
+      background-color: #CBD2A4; /* Header background color */
+      display: flex; /* Flexbox for horizontal layout */
+      justify-content: space-between; /* Space between header items */
+      align-items: center; /* Center items vertically */
+      padding: 10px 30px; /* Padding around header content */
+      border-bottom: 1px solid grey;
+    }
+
+    .header .title-container {
+      font-size: 15px;
+      font-weight: bold;
+      color: #597445;
+      line-height: 1.2;
+      max-width: 300px;
+    }
+
+    .header .center-title {
+      flex-grow: 2; 
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #1A5319;
+      font-family: papyrus;
+    }
+
+    .header .menu {
+      display: flex; 
+      gap: 20px; 
+    }
+
+    .header .menu a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #666;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .header .menu a:hover {
+      color: #000;
+    }
+
+    .menu a.current-page {
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Content Section */
+    .content-container {
+      flex: 1; 
+      display: flex; 
+      align-items: center;
+      gap: 20px; 
+      padding: 30px;
+      background-image: url('bg ii image.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      /* Apply slide-in animation */
+      opacity: 0; 
+      animation: slideIn 1.5s ease-out forwards;
+    }
+
+    /* Image Styling */
+    .content-container img {
+      width: 35%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* Text Styling */
+    .content-container .text {
+      width: 50%;
+      font-size: 15px;
+      color: #16423C;
+      line-height: 1.5;
+      background-color: #9CA986;
+      border-radius: 10px;
+      text-align: justify;
+      padding: 20px;
+      margin: 0 auto;
+      
+    }
+
+    /* Keyframe for Slide-in Animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Footer Section */
+    .footer {
+      background-color: #CBD2A4; 
+      color: #444; 
+      text-align: center; 
+      padding: 20px 0; 
+      border-top: 1px solid #ccc; 
+      position: static; 
+      clear: both; 
+      width: 100%; 
+      margin: 0; 
+      box-sizing: border-box; 
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto; 
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .footer-links {
+      display: flex; 
+      justify-content: center;
+      align-items: center; 
+      gap: 10px; 
+      margin-top: 15px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #000; 
+    }
+
+    .footer-links img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    /* Profile Container Styling */
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 50px auto;
+    }
+
+    /* Profile Picture Styling */
+    .profile-container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid black;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    /* Welcome Text Styling */
+    .profile-container h2 {
+      font-size: 24px;
+      color: #444;
+      margin: 0;
+    }
+
+.highlights-section {
+  padding: 30px;
+  background-image: url('bg ii image.jpeg');
+  text-align: center;
+  font-family: monospaced;
+
+}
+
+.highlight-card {
+  display: block;
+  text-decoration: none; 
+  background-color: #85A98F;
+  border: 1px solid #CBD2A4;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: arial;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.highlight-card p {
+  font-size: 14px;
+  color: white;
+}
+
+.highlight-card:focus {
+  outline: 2px solid #CBD2A4; /* Add focus indicator for accessibility */
+}
+
+</style>
+</head>
+
+<body>
+  <!-- Wrapper -->
+  <div class="wrapper">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="title-container">
+        <h1>Amisha Hazreen Amirhyde</h1>
+        <p>IMD318 - JCDIM1105A</p>
+      </div>
+      <div class="center-title">
+        <h2>My Personal Website</h2>
+      </div>
+      <div class="menu">
+        <a href="resumewebsite.html" class="current-page">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="personalpicks.html">Personal Picks</a>
+        <a href="gallery2.html">Gallery</a>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-container">
+      <div class="profile-container">
+        <img src="gambar saya.jpg" alt="gambar saya">
+         <br>
+         <h2 style="font-family: monospaced"; > Welcome to my website! </h2> 
+         <br>
+        <div class="text">
+          <p>Hello everyone! My name is Amisha Hazreen, and welcome to my personal website. I am currently studying in Diploma of Information Management in UiTM. I am also currently conducting an individual project for subject IMD318. I enjoy exploring web design, learning new skills, and creating engaging projects. This platform showcases my biodata, experiences and journey. Feel free to explore too! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="highlights-section">
+  <h3 style="font-size: 25px;" > Highlights</h3>
+
+ <a href="aboutme.html" class="highlight-card">
+    <h4>About Me</h4>
+    <p>If you want to learn more about me, click here!</p>
+  </a>
+
+  <!-- Highlight Card 2 -->
+  <a href="personalpicks.html" class="highlight-card">
+    <h4>Personal Picks</h4>
+    <p>Check out my favorite taste in music and movies!</p>
+  </a>
+
+  <!-- Highlight Card 3 -->
+  <a href="gallery2.html" class="highlight-card">
+    <h4>Gallery</h4>
+    <p>Explore my collection of memorable moments captured in photos.</p>
+  </a>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2024 Amisha Hazreen Amirhyde. All Rights Reserved.</p>
+      <br>
+      <p>Connect with me:</p>
+      <div class="footer-links">
+        <a href="https://facebook.com" target="_blank">
+          <img src="fb logo.PNG" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/syaesiurc/" target="_blank">
+          <img src="insta logo.PNG" alt="instagram">
+        </a>
+        <a href="https://www.youtube.com/@amishahazreen7060" target="_blank">
+          <img src="yt logo.PNG" alt="youtube">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

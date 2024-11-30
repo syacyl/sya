@@ -1,0 +1,266 @@
+<html>
+<html>
+<head>
+  <title>Personal Picks</title>
+  <style>
+    /* General Reset */
+    body {
+      background-color: #E5E1DA;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header Styles */
+    .header {
+      background-color: #CBD2A4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 1px solid grey;
+    }
+
+    .header .title-container {
+      font-size: 15px;
+      font-weight: bold;
+      color: #597445;
+      margin: 3px;
+      line-height: 1;
+      word-wrap: break-word;
+      max-width: 300px;
+    }
+
+    .header .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header .menu a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #666;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .header .menu a:hover {
+      color: #000;
+    }
+
+    /* Content Section with Background */
+    .content-container {
+      flex: 1;
+      background-image: url('bg green landscape.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: black;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content-container h1 {
+      font-size: 35px;
+      margin-bottom: 20px;
+      font-family: 'Dancing Script';
+    }
+
+.menu a.current-page {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .image-item {
+      text-align: center;
+    }
+
+    .image-item img {
+      width: 250px;
+      height: 250px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-item p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .audio-container audio {
+      margin-top: 10px;
+    }
+
+    .video-container {
+      margin: 20px auto;
+      max-width: 500px; 
+      text-align: center;
+    }
+
+    .video-container video {
+      width: 100%; 
+      max-width: 400px; 
+      margin: 0 auto; 
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    /* Footer */
+    .footer {
+      background-color: #CBD2A4;
+      color: #444; 
+      text-align: center;
+      padding: 20px 0px;
+      border-top: 1px solid #ccc; 
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-container {
+      max-width: 1200px; 
+      margin: auto;
+    }
+
+   .footer p {
+      margin: 0; 
+      font-size: 14px; 
+    }
+
+    .footer-links {
+      display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px;
+margin-top: 15px;
+}
+
+
+    .footer-links a {
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #000; /* Changes color on hover */
+    }
+  .footer-links img {
+  width: 30px; /* Set width to 30px */
+  height: 30px; /* Set height to 30px */
+  object-fit: contain; /* Ensures images maintain aspect ratio */
+}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="title-container">
+      <h1>Personal Picks</h1>
+    </div>
+    <div class="center-title"></div>
+    <div class="menu">
+      <a href="resumewebsite.html">Home</a>
+      <a href="aboutme.html">About</a>
+      <a href="personalpicks.html" class="current-page">Personal Picks</a>
+      <a href="gallery2.html">Gallery</a>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content-container">
+    <h1> <marquee> My Top 3 Favourite Artists: </marquee></h1>
+    <div class="image-container">
+      <div class="image-item">
+        <img src="tayluhh.jpeg" alt="Taylor Swift">
+        <p>Taylor Swift</p>
+        <audio controls>
+          <source src="Taylor Swift - Anti-Hero.mp3" type="audio/mpeg">zz
+        </audio>
+      </div>
+
+      <div class="image-item">
+        <img src="ZAYN (2).jpeg" alt="Zayn">
+        <p>Zayn</p>
+        <audio controls>
+          <source src="zayn - stardust.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="image-item">
+        <img src="bts.jpeg" alt="BTS">
+        <p>BTS</p>
+        <audio controls>
+          <source src="bts dynamite ii.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <h1><marquee>My Top 3 Favourite Movies:</marquee></h1>
+    <div class="image-container">
+      <div class="image-item">
+        <img src="nysm.jpeg" alt="Now You See Me">
+        <p>Now You See Me</p>
+        <div class="video-container">
+          <video autoplay loop muted controls>
+            <source src="nysm vid.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="image-item">
+        <img src="topgun.jpeg" alt="Top Gun Maverick">
+        <p>Top Gun Maverick</p>
+        <div class="video-container">
+          <video autoplay loop muted controls>
+            <source src="topgun trailer.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="image-item">
+        <img src="kingsmann.jpg" alt="Kingsman">
+        <p>Kingsman: The Secret Service</p>
+        <div class="video-container">
+          <video autoplay loop muted controls>
+            <source src="kingsman trailer.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+   <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2024 Amisha Hazreen Amirhyde. All Rights Reserved.</p>
+       <br>
+      <p> Connect with me: </p>
+      <div class="footer-links">
+        <a href="https://facebook.com" target="_blank"> 
+             <img src="fb logo.PNG" alt="facebook"> </a>
+        <a href="https://www.instagram.com/syaesiurc/" target="_blank">
+               <img src="insta logo.PNG" alt="instagram"> </a>
+        <a href="https://www.youtube.com/@amishahazreen7060" target="_blank">
+                 <img src="yt logo.PNG" alt="youtube"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
